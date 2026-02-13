@@ -5,6 +5,8 @@ const CONFIG = {
     noButton: "NO",
     noEscapeTexts: ["Eits, ga bisa😝", "Hehe, coba lagi 😜", "Yaudah deh, aku anggap YES ya! 💕"],
     confirmTitle: "YEAAAY! Kamu Beneran Mau 💗",
+    noEscapeTexts: ["Try again, sweetie! You can't do that!", "No No No!!!", "Okay then, I will take that as a YES! 💝"],
+    confirmTitle: "awwwwwwww, is that really true? 💗",
     confirmText: "Mulai dari sekarang kamu resmi jadi…",
     badgeText: "My Valentine",
     nextButton: "Lanjut ",
