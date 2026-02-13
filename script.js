@@ -353,7 +353,51 @@ function initEventListeners() {
 
 document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
-    initEventListeners();
     createSparkles();
     new ParticleSystem();
 });
+
+function startLoveTimer() {
+    const timer = document.getElementById('loveTimer');
+    if (!timer) return;
+
+    // February 14, 2025 at 21:00 Ukraine time
+    const startDate = new Date('2025-02-14T19:00:00Z'); 
+
+    function update() {
+        const now = new Date();
+        const diff = now - startDate;
+
+        if (diff < 0) {
+            timer.innerHTML = "Our time hasn’t started yet ❤️";
+            return;
+        }
+
+        const totalSeconds = Math.floor(diff / 1000);
+
+        const days = Math.floor(totalSeconds / (60 * 60 * 24));
+        const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+        const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+        const seconds = totalSeconds % 60;
+
+        timer.innerHTML = `
+            <div style="
+                font-size:18px;
+                font-weight:600;
+                letter-spacing:1px;
+                padding:10px 20px;
+                border-radius:20px;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                display:inline-block;
+            ">
+                ❤️ ${days}d ${hours}h ${minutes}m ${seconds}s
+            </div>
+        `;
+    }
+
+    update();
+    setInterval(update, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', startLoveTimer);
