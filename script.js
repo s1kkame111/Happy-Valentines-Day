@@ -196,7 +196,6 @@ function handleEnvelopeClick() {
         elements.envelopeWrapper.classList.add('hidden');
         elements.finalContent.classList.remove('hidden');
         elements.finalContent.classList.add('reveal');
-        triggerConfetti();
     }, 1700);
 }
 
