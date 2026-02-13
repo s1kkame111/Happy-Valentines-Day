@@ -1044,8 +1044,17 @@ body {
     margin: 24px 0;
     border: 1px solid rgba(255, 255, 255, 0.5);
 
-    max-height: 320px;
+    flex: 1;
     overflow-y: auto;
+}
+
+.message-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.message-box::-webkit-scrollbar-thumb {
+    background: rgba(236, 72, 153, 0.45);
+    border-radius: 10px;
 }
 
 .message-decoration {
