@@ -354,6 +354,7 @@ function initEventListeners() {
 document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
     initEventListeners();
+    initMouseTrail();
     new ParticleSystem();
 }
                           
