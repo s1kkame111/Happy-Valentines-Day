@@ -1011,9 +1011,7 @@ body {
 }
 
 .final-emoji {
-    font-size: 4rem;
-    margin-bottom: 16px;
-    animation: heartPump 1.5s ease-in-out infinite;
+    display: none;
 }
 
 @keyframes heartPump {
@@ -1195,9 +1193,17 @@ body {
         flex-direction: column;
     }
 
-    .message-box p {
-        font-size: 0.95rem;
-    }
+    .message-box {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    border-radius: 24px;
+    padding: 28px 24px;
+    margin: 18px 0 24px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    flex: 1.15;
+    overflow-y: auto;
+}
 
     .floating-hearts {
         top: -50px;
@@ -1275,8 +1281,10 @@ body {
     }
 
     .title-final {
-        font-size: 2.8rem;
-    }
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
 
     .subtitle {
         font-size: 1.3rem;
