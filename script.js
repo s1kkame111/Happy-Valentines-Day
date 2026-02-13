@@ -347,6 +347,7 @@ function initMouseTrail() {
         if (now - lastTime < throttleMs) return;
         lastTime = now;
 
+      document.addEventListener('mousemove', (e) => {
         const heart = document.createElement('span');
         heart.className = 'cursor-heart';
         heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
