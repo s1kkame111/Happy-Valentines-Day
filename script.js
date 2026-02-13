@@ -1,4 +1,3 @@
-@@ -0,0 +1,369 @@
 const CONFIG = {
     mainQuestion: "Will you be my Valentine?",
     subQuestion: "Please say yes ",
