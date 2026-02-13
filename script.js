@@ -343,7 +343,6 @@ function initMouseTrail() {
     let lastTime = 0;
     const throttleMs = 50;
 
-    document.addEventListener('mousemove', (e) => {
         const now = Date.now();
         if (now - lastTime < throttleMs) return;
         lastTime = now;
