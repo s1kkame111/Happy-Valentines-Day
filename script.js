@@ -355,7 +355,8 @@ document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
     initEventListeners();
     new ParticleSystem();
-});
+}
+                          
 function startLoveTimer() {
     const timer = document.getElementById("loveTimer");
     if (!timer) return;
@@ -391,3 +392,4 @@ function startLoveTimer() {
 }
 
 document.addEventListener("DOMContentLoaded", startLoveTimer);
+});
