@@ -152,7 +152,7 @@ function handlePhotoUpload(index, event) {
 
 function triggerConfetti() {
     elements.confettiContainer.innerHTML = '';
-    const hearts = [];
+    const hearts = ['💖', '💕', '💗', '💓', '💞', '💝', '❤️', '🩷', '✨', '🌸'];
     for (let i = 0; i < 60; i++) {
         setTimeout(() => {
             const confetti = document.createElement('span');
@@ -339,7 +339,7 @@ function initEventListeners() {
 }
 
 function initMouseTrail() {
-    const hearts = [];
+    const hearts = ['💕', '💗', '💖', '💓', '🩷', '✨'];
     let lastTime = 0;
     const throttleMs = 50;
 
