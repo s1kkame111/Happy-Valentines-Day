@@ -576,24 +576,9 @@ body {
     text-shadow: none;
 }
 
-.badge::before {
-    content: '💕';
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    -webkit-text-fill-color: initial;
-}
-
+.badge::before,
 .badge::after {
-    content: '💕';
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    -webkit-text-fill-color: initial;
+    content: none;
 }
 
 .badge-sparkle {
