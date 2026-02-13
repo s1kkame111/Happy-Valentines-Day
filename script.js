@@ -338,32 +338,9 @@ function initEventListeners() {
     if (elements.envelopeWrapper) elements.envelopeWrapper.addEventListener('click', handleEnvelopeClick);
 }
 
-function initMouseTrail() {
-    const hearts = ['💕', '💗', '💖', '💓', '🩷', '✨'];
-    let lastTime = 0;
-    const throttleMs = 50;
-
-    document.addEventListener('mousemove', (e) => {
-        const now = Date.now();
-        if (now - lastTime < throttleMs) return;
-        lastTime = now;
-
-        const heart = document.createElement('span');
-        heart.className = 'cursor-heart';
-        heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-        heart.style.left = e.pageX + 'px';
-        heart.style.top = e.pageY + 'px';
-        heart.style.fontSize = (Math.random() * 12 + 10) + 'px';
-        document.body.appendChild(heart);
-
-        setTimeout(() => heart.remove(), 1000);
-    });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
     initEventListeners();
     createSparkles();
     new ParticleSystem();
-    initMouseTrail();
 });
