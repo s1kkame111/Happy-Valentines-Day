@@ -15,7 +15,7 @@ const CONFIG = {
     nextFlowerButton: "Next ",
     collageTitle: "This is Us ❤️ (⁠o ´ ᵕ `⁠)⁠っ",
     collageSubtitle: "Even when you are not physically here, you are always in my heart, in the songs I hear, in the little moments that I suddenly cherish because they remind me of you...",
-    nextCollageButton: "One more page... ",
+    nextCollageButton: "One more... ",
     finalTitle: "I will always love you with everything I am ❤️",
     finalMessage: `Love sometimes feels like an understatement when I think about how I feel about you. Every couple thinks their love story is the best, but I genuinely believe ours tops the list. Ever since you came into my life, every little thing, every little moment and everything around me just got a whole lot brighter. It's not merely today, but each day that you grace my existence with your love. For all the days you have made me feel beloved, loved and valued, I am at a loss for words to convey how thankful I am to exist within the safe and loving space you do your best to create for us every day, to be chosen by you as your wife and your closest confidante, and this reality and every future plan with you.
 
@@ -34,7 +34,7 @@ I promise to keep loving, to respect you and cherish you always. You mean the wo
 Happy Valentine's day and one year of our story, my Beloved Man  💖`,
     restartButton: "Restart ",
     copyButton: "Copy Message ",
-    copySuccess: "Message successfully copied! "
+    copySuccess: "Successfully copied! "
 };
 
 const state = { currentPage: 1, hasClickedYes: false, noClickCount: 0, bouquetTaken: false, musicPlaying: false, photos: [null, null, null, null] };
