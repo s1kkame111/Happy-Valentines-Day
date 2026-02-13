@@ -1,6 +1,6 @@
 const CONFIG = {
     mainQuestion: "Will you be my Valentine?",
-    subQuestion: "Please say yes ",
+    subQuestion: "              Please say yes ",
     yesButton: "YES",
     noButton: "NO",
     noEscapeTexts: ["Eits, ga bisa😝", "Hehe, coba lagi 😜", "Yaudah deh, aku anggap YES ya! 💕"],
