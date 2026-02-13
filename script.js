@@ -150,23 +150,6 @@ function handlePhotoUpload(index, event) {
     reader.readAsDataURL(file);
 }
 
-function triggerConfetti() {
-    elements.confettiContainer.innerHTML = '';
-    const hearts = [];
-    for (let i = 0; i < 60; i++) {
-        setTimeout(() => {
-            const confetti = document.createElement('span');
-            confetti.className = 'confetti-heart';
-            confetti.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-            confetti.style.left = Math.random() * 100 + '%';
-            confetti.style.fontSize = (Math.random() * 1.8 + 1) + 'rem';
-            confetti.style.animationDelay = Math.random() * 0.3 + 's';
-            elements.confettiContainer.appendChild(confetti);
-            setTimeout(() => confetti.remove(), 4500);
-        }, i * 50);
-    }
-}
-
 function resetEnvelope() {
     elements.envelopeWrapper.classList.remove('hidden', 'fade-out');
     elements.envelope.classList.remove('opened', 'letter-exit');
@@ -342,23 +325,6 @@ function initMouseTrail() {
     const hearts = [];
     let lastTime = 0;
     const throttleMs = 50;
-
-    document.addEventListener('mousemove', (e) => {
-        const now = Date.now();
-        if (now - lastTime < throttleMs) return;
-        lastTime = now;
-
-        const heart = document.createElement('span');
-        heart.className = 'cursor-heart';
-        heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-        heart.style.left = e.pageX + 'px';
-        heart.style.top = e.pageY + 'px';
-        heart.style.fontSize = (Math.random() * 12 + 10) + 'px';
-        document.body.appendChild(heart);
-
-        setTimeout(() => heart.remove(), 1000);
-    });
-}
 
 document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
