@@ -354,43 +354,6 @@ function initEventListeners() {
 document.addEventListener('DOMContentLoaded', () => {
     applyConfig();
     initEventListeners();
-    initMouseTrail();
+    createSparkles();
     new ParticleSystem();
-}
-                          
-function startLoveTimer() {
-    const timer = document.getElementById("loveTimer");
-    if (!timer) return;
-
-    const startDate = new Date("2025-02-14T19:00:00Z"); 
-    // 21:00 Ukraine time (UTC+2 in February)
-
-    function updateTimer() {
-        const now = new Date();
-        const diff = now - startDate;
-
-        if (diff < 0) {
-            timer.textContent = "Counting...";
-            return;
-        }
-
-        const totalSeconds = Math.floor(diff / 1000);
-
-        const days = Math.floor(totalSeconds / 86400);
-        const hours = Math.floor((totalSeconds % 86400) / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        timer.textContent =
-            days + " days " +
-            hours + " hours " +
-            minutes + " minutes " +
-            seconds + " seconds";
-    }
-
-    updateTimer();
-    setInterval(updateTimer, 1000);
-}
-
-document.addEventListener("DOMContentLoaded", startLoveTimer);
 });
