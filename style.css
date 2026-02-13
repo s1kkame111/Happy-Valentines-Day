@@ -262,7 +262,7 @@ body {
     visibility: hidden;
     transform: translateY(30px) scale(0.98);
     transition: all 0.6s var(--ease-smooth);
-    padding: 20px;
+    padding: 0;
     overflow-y: auto;
 }
 
@@ -283,6 +283,7 @@ body {
     width: 100%;
     padding: 20px;
     position: relative;
+    maegin: 0 auto;
 }
 
 .glass-card {
