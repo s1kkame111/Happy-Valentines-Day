@@ -1005,6 +1005,9 @@ body {
 
 .final-card {
     padding: 45px 35px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .final-emoji {
