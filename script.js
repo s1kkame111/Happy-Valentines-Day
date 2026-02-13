@@ -4,7 +4,7 @@ const CONFIG = {
     yesButton: "YES",
     noButton: "NO",
     noEscapeTexts: ["Try again, sweetie! You can't do that!", "No no no!!!", "Too late... I’m choosing YES for you 💘"],
-    confirmTitle: "You are officially my Valentine now, on this very special day!",
+    confirmTitle: "You are officially my Valentine now, on this very special day",
     confirmText: "You're not just the person I love; you are the reason I believe in love and on this Valentine's Day, I want to affirm the depth of feelings I have for you...",
     badgeText: "",
     nextButton: "Next ",
