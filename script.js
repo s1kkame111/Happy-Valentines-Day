@@ -5,7 +5,7 @@ const CONFIG = {
     noButton: "NO",
     noEscapeTexts: ["Try again, sweetie! You can't do that!", "No no no!!!", "Too late... I’m choosing YES for you 💘"],
     confirmTitle: "You are officially my Valentine now, on this very special day",
-    confirmText: "You're not just the person I love; you are the reason I believe in love and on this Valentine's Day, I want to affirm the depth of feelings I have for you...",
+    confirmText: "You're not just the person I love; you are the reason I believe in love and on this Valentine's day, I want to affirm the depth of feelings I have for you...",
     badgeText: "",
     nextButton: "Next ",
     repeatButton: "Go back",
@@ -17,7 +17,21 @@ const CONFIG = {
     collageSubtitle: "Even when you are not physically here, you are always in my heart, in the songs I hear, in the little moments that I suddenly cherish because they remind me of you...",
     nextCollageButton: "Satu halaman lagi… ",
     finalTitle: "Happy Valentine, My Love 💞",
-    finalMessage: `Makasih ya sudah hadir dan bikin hariku selalu terasa cukup. Kamu adalah alasan kenapa senyum itu mudah muncul. Semoga hari harimu selalu penuh kehangatan dan kebahagiaan. Aku selalu ada untukmu. Happy Valentine 💕`,
+    finalMessage: `Love sometimes feels like an understatement when I think about how I feel about you. Every couple thinks their love story is the best, but I genuinely believe ours tops the list. Ever since you came into my life, every little thing, every little moment and everything around me just got a whole lot brighter. It's not merely today, but each day that you grace my existence with your love. For all the days you have made me feel beloved, loved and valued, I am at a loss for words to convey how thankful I am to exist within the safe and loving space you do your best to create for us every day, to be chosen by you as your wife and your closest confidante, and this reality and every future plan with you.
+
+Your love is like a splash of color on a dull canvas, changing my reality into a work of art that even my biggest dreams couldn't come close in describing.
+
+There's so much about you that I just adore with every fibber of my heart. The way you stand strong and true, the unyielding love for those you hold dear. Your beautiful heart, it's more precious than a kingdom’s legacy. To be completely honest, being with you has changed me for the better, absolutely better. Better than anyone in my entire life, and better than I ever imagined. You warm my heart with your presence, your love, attention and care, your support and concern. From the small greedings to the echo of our shared memories, I know every bit of me wouldn't sacrifice a single second of that for anything in the world.
+
+From the very first day, you've always been there for me. You've been my a source of support and happiness, and you've held me firmly without cracking or breaking. You've kept yourself firm and upright for us and nothing in this world seems enough for me to show you how much I appreciate you.
+
+I just want to say thanks for all the good times we've had - the memories, those moments we spent together. Your very existence alone serves as the best example of what it means to be the most outstanding, wonderful and loving person in the world. In any room, in any world, you are the most noteworthy Man. You are the standard by which everyone else is appraised, and you are undoubtedly the best of all who exist.
+
+I just want you to know that you mean everything to me. I want to learn you and love you the way you want and deserve to be loved. I want to be the picture perfect girlfriend and wife you've always imagined.
+
+I promise to keep loving, to respect you and cherish you always. You mean the world to me, and I can't wait to see where our story goes from here.
+
+Happy Valentine's day and one year of our story, my Beloved Man  💖`,
     restartButton: "Restart ",
     copyButton: "Copy Message ",
     copySuccess: "Pesan berhasil dicopy! "
