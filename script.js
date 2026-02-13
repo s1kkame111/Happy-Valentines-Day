@@ -34,7 +34,7 @@ I promise to keep loving, to respect you and cherish you always. You mean the wo
 Happy Valentine's day and one year of our story, my Beloved Man  💖`,
     restartButton: "Restart ",
     copyButton: "Copy Message ",
-    copySuccess: "Pesan berhasil dicopy! "
+    copySuccess: "Message successfully copied! "
 };
 
 const state = { currentPage: 1, hasClickedYes: false, noClickCount: 0, bouquetTaken: false, musicPlaying: false, photos: [null, null, null, null] };
