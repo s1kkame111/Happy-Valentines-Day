@@ -1,3 +1,4 @@
+@@ -0,0 +1,369 @@
 const CONFIG = {
     mainQuestion: "Will you be my Valentine?",
     subQuestion: "Please say yes ",
@@ -152,7 +153,7 @@ function handlePhotoUpload(index, event) {
 
 function triggerConfetti() {
     elements.confettiContainer.innerHTML = '';
-    const hearts = [];
+    const hearts = ['💖', '💕', '💗', '💓', '💞', '💝', '❤️', '🩷', '✨', '🌸'];
     for (let i = 0; i < 60; i++) {
         setTimeout(() => {
             const confetti = document.createElement('span');
@@ -339,15 +340,15 @@ function initEventListeners() {
 }
 
 function initMouseTrail() {
-    const hearts = [];
+    const hearts = ['💕', '💗', '💖', '💓', '🩷', '✨'];
     let lastTime = 0;
     const throttleMs = 50;
 
+    document.addEventListener('mousemove', (e) => {
         const now = Date.now();
         if (now - lastTime < throttleMs) return;
         lastTime = now;
 
-      document.addEventListener('mousemove', (e) => {
         const heart = document.createElement('span');
         heart.className = 'cursor-heart';
         heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
